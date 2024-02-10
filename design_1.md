@@ -15,4 +15,3 @@ Functionalities
 - Vote
 - Tags
 - Comment
-- another
