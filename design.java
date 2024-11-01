@@ -5,11 +5,16 @@ class User
     List<question_id> questionList;
     List<answer_id> answerList;
     int rewards;
+    String interests;
+
 
 
     function add/update/delete question();
-    function add/update/delete answer();
+    function add/update/delete/upvote answer();
     function add/update/delete comment();
+    funtion request clubroom();
+    funtcion join community();
+ 
 
 }
 
@@ -19,6 +24,41 @@ class Moderator extends User
     function approve or disapprove answer();
     function addtag();
 }
+
+class EduUser extends User
+    {
+    String eduid;
+    String details;
+    List<question_id> questionList;
+    List<answer_id> answerList;
+    int rewards;
+    String interests;
+
+
+    function add/update/delete question();
+    function add/update/delete/upvote answer();
+    function add/update/delete comment();
+    funtion request clubroom();
+    funtcion join community(); 
+
+}
+
+class DE extends User
+    {
+
+    String uid;
+    String details(bio);
+    List<question_id> questionList;
+    List<answer_id> answerList;
+    int rewards;
+    String interests;
+
+    function add/update/delete question();
+    function add/update/delete/upvote answer();
+    function add/update/delete comment();
+    funtion create clubroom();
+    funtion build community();
+        
 
 class question
 {
@@ -70,3 +110,7 @@ class Vote
     String totalDownvote;
  
 }
+
+class Community
+    {
+        String 
